@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:true}));
 //create a todo
 app.post("/todos", async(req,res)=>{
     try {
-
+        console.log(req.body);
         
     } catch (error) {
         console.error(err.message);
